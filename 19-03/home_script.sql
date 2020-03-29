@@ -1,0 +1,16 @@
+CREATE DATABASE 11b_02_school;
+
+USE 11b_02_school;
+
+CREATE TABLE IF NOT EXISTS Students(
+	Id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(150) NOT NULL,
+    Class VARCHAR(3) NOT NULL,
+    EntranceExamResult NUMERIC(3,2),
+    Birthday DATE,
+    EGN CHAR(10)
+);
+
+INSERT INTO Students
+VALUES (NULL, 'Alexander Stoichkov', '11b', 5.75,
+'2002-08-11', '0123456789');
